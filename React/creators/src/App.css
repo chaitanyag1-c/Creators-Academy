@@ -1,0 +1,96 @@
+:root{
+  --primary-color:#dd3163;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* section::before{
+  background: url('./bg.jpg') no-repeat center center/cover ;
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+  opacity:0.9;
+  height: 94vh;
+  width: 100vw;
+} */
+header{
+  background: linear-gradient(62deg, white, aliceblue);
+  height:60px;
+  font-family: 'Ubuntu', sans-serif;
+  /* font-family: 'Black Ops One', cursive; */
+font-size: 23px;
+}
+.ulhead{
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: flex-start;
+}
+.nav-items{
+  
+  display: flex;
+  flex-wrap: wrap;
+  /* background: aliceblue; */
+  position: absolute;
+  right: 2px;
+  width: 667px;
+  margin: 0px;
+  height: 60px;
+}
+.nav-items>li{
+list-style: none;
+padding:15px;
+transition: all 0.4s ease-in;
+margin-left: 25px;
+}
+
+.nav-items>li>a{
+  text-decoration: none;
+  color:#dd3163;
+}
+.nav-items>li:hover{
+  transform: translateX(5px);
+  
+}
+.ulhead>a>img{
+  width: 73%;
+  padding: 1px;
+  border-radius: 5%
+}
+.hero-text{
+  position: absolute;
+  top: 174px;
+  right: 77px;
+}
+
+.hero-text>h1 {
+  font-size: 60px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  background:-webkit-repeating-linear-gradient(30deg,#dd3163,rgb(240, 44, 44));
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+.hero-text>h2 {
+  font-size: 36px;
+  font-family: sans-serif;
+  
+  margin-top: -28px;
+ color:darkcyan;
+}
+.bg>img{
+  width: 88%;
+  position: absolute;
+  bottom: -26px;
+  z-index: -1;
+  left: -32px;
+}
